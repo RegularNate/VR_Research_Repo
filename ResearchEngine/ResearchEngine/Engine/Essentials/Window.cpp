@@ -50,17 +50,17 @@ bool Window::Initialize(HINSTANCE* hInstance_, int& nCmdShow_, short width_, sho
 	RegisterClassEx(&windowInformation);
 
 	//Create window
-	windowHandle = CreateWindowEx(NULL,					//Extended Windows Style
-									name_.c_str(),		//Class name for the Register
-									title_.c_str(),		//Title at the top of the window
+	windowHandle = CreateWindowEx(NULL,						//Extended Windows Style
+									name_.c_str(),			//Class name for the Register
+									title_.c_str(),			//Title at the top of the window
 									WS_OVERLAPPEDWINDOW,	//Window style
-									clientSize.left,					//x
-									clientSize.top,					//y
-									clientSize.right,					//Width
-									clientSize.bottom,				//Height
+									clientSize.left,		//x
+									clientSize.top,			//y
+									clientSize.right,		//Width
+									clientSize.bottom,		//Height
 									NULL,					//Handle to a parent window
 									NULL,					//Handle to a menu window
-									*hInstance_,				//Handle to application instance
+									*hInstance_,			//Handle to application instance
 									NULL);					//Pointer to a value to be passed in
 
 	ShowWindow(windowHandle, nCmdShow_);

@@ -32,9 +32,16 @@ namespace vre {
 
 
 	private:
+		//Swap Chain and GPU context components for setup
 		IDXGISwapChain* swapChain;				//This controls the draw buffers
 		ID3D11Device* renderDevice;					//This IS the GPU
 		ID3D11DeviceContext* renderDeviceContext;	//This is the context to the pipeline on the GPU
+
+		//Buffer targets for use in rendering
+		ID3D11RenderTargetView* backBuffer;
+
+
+		
 
 		DXGI_SWAP_CHAIN_DESC swapChainInformation;
 	};

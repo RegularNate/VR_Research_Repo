@@ -55,5 +55,9 @@ c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d10.h(608): w
   c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50445): note: see previous definition of 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS'
 c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d10.h(609): warning C4005: 'D3D10_ERROR_FILE_NOT_FOUND': macro redefinition
   c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50454): note: see previous definition of 'D3D10_ERROR_FILE_NOT_FOUND'
+d:\_project_vault\rendering_projects\vr_engine\researchengine\researchengine\engine\essentials\renderer.cpp(88): warning C4244: '=': conversion from 'LONG' to 'FLOAT', possible loss of data
+d:\_project_vault\rendering_projects\vr_engine\researchengine\researchengine\engine\essentials\renderer.cpp(89): warning C4244: '=': conversion from 'LONG' to 'FLOAT', possible loss of data
+d:\_project_vault\rendering_projects\vr_engine\researchengine\researchengine\engine\essentials\renderer.cpp(90): warning C4244: '=': conversion from 'LONG' to 'FLOAT', possible loss of data
+d:\_project_vault\rendering_projects\vr_engine\researchengine\researchengine\engine\essentials\renderer.cpp(91): warning C4244: '=': conversion from 'LONG' to 'FLOAT', possible loss of data
   ResearchEngine.vcxproj -> D:\_Project_Vault\Rendering_Projects\VR_Engine\ResearchEngine\x64\Debug\ResearchEngine.exe
   ResearchEngine.vcxproj -> D:\_Project_Vault\Rendering_Projects\VR_Engine\ResearchEngine\x64\Debug\ResearchEngine.pdb (Partial PDB)

@@ -46,8 +46,18 @@ bool EngineMain::Initialize(HINSTANCE* hInstance_, LPSTR* lpCmdLine_, int& nCmdS
 	mainWindow = new Window();
 	mainRenderer = new Renderer();
 
-	mainWindow->Initialize(hInstance, nCmdShow, 600, 400, "MainWindowClass", "DX11 Test Demo");
-	mainRenderer->Initialize(mainWindow->GetWindowHandle());
+
+	//If either the Window or the Render do not initialize then we'll need to return false so that the game quits out now
+	if (!mainWindow->Initialize(hInstance, nCmdShow, 600, 400, "MainWindowClass", "DX11 Test Demo")) {
+		std::cout << "Window Failed to Initialize. . ." << std::endl;
+		return false;
+	}
+	
+	if (!mainRenderer->Initialize(mainWindow->GetWindowHandle())) {
+		std::cout << "Renderer Failed to Initialize. . ." << std::endl;
+		return false;
+	}
+
 
 	return true;
 }
